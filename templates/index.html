@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body class="p-4">
+    <div class="container">
+        <h1 style="text-align: center;">Ninja</h1>
+        <hr class="bg-white w-100" />
+        <h2>total oro  {{oro}} </h2>
+        <div class="row">
+            <div class="col-3">
+                <form action="/gold/process_money" method="post">
+                    <div class="text-center">
+                        <h5>Farm</h5>
+                        <hr class="bg-white w-100" />
+                        <div class="align-items-center justify-content-center">
+                            gana de 10-20 de oro
+                            <input type="hidden" class="form-control d-inline mx-3" name="lugar" value="farm" required />
+                        </div>
+                        <button type="submit" class="btn btn-danger">Ganar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+                <form action="/gold/process_money" method="post">
+                    <div class="text-center">
+                        <h5>Cave</h5>
+                        <hr class="bg-white w-100" />
+                        <div class="align-items-center justify-content-center">
+                            gana de 5-10 de oro
+                            <input type="hidden" class="form-control d-inline mx-3" name="lugar" value="cave" required />
+                        </div>
+                        <button type="submit" class="btn btn-danger">Ganar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+                <form action="/gold/process_money" method="post">
+                    <div class="text-center">
+                        <h5>Hause</h5>
+                        <hr class="bg-white w-100" />
+                        <div class="align-items-center justify-content-center">
+                            gana de 2-5 de oro
+                            <input type="hidden" class="form-control d-inline mx-3" name="lugar" value="house" required />
+                        </div>
+                        <button type="submit" class="btn btn-danger">Ganar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+                <form action="/gold/process_money" method="post">
+                    <div class="text-center">
+                        <h5>Cacino</h5>
+                        <hr class="bg-white w-100" />
+                        <div class="align-items-center justify-content-center">
+                            gana de 0-50 de oro
+                            <input type="hidden" class="form-control d-inline mx-3" name="lugar" value="casino" required />
+                        </div>
+                        <button type="submit" class="btn btn-danger">Ganar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr class="bg-white w-100" />
+        <div>
+            
+                <p style="color: green;">El puntaje obtenido es {{msjs}}</p>
+       
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js " crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/scriptAutor.js"></script>
+
+
+
+</body>
+
+</html>
